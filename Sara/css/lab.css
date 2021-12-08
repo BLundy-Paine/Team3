@@ -74,6 +74,7 @@ img {
 }
 
 #audio {
+  margin: auto !important;
   max-width: 350px;
   max-height: 350px;
   background-color: #bbd4e4;
