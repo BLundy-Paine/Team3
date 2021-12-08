@@ -18,6 +18,10 @@
   color: #FFFFFF !important;
 }
 
+#active {
+  font-weight: bold;
+}
+
 header {
   font-family: 'Libre Baskerville', serif;
   text-align: center;
@@ -34,15 +38,7 @@ body {
     background-repeat: none;
     background-size: cover;
     font-family: serif;
-    color: #5a7048;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    color: #0d0907;
 }
 
 main {
@@ -52,7 +48,6 @@ main {
   justify-content: space-between;
   min-width: 100%;
   overflow: hidden;
-  text-align: center;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -62,12 +57,8 @@ h1, h2, h3 {
   padding: 7px;
 }
 
-#text {
-  position: relative;
-  max-width: 100%;
-  max-height: auto;
-  padding: 10px;
-  text-align: left;
+h2 {
+    text-align: left;
 }
 
 .col-lg-6, .col-lg-4, .col-lg-8 {
@@ -78,18 +69,12 @@ h1, h2, h3 {
   margin: 10px;
 }
 
-.bg-light {
-  position: sticky;
-  color: green;
-}
-
-/*color for nav*/
-.bg-light {
-    background-color: #ecede2!important;
+#poem {
+  font-size: 90%;
+  line-height: 20px;
 }
 
 img {
-  position: relative;
   max-width: 60%;
   min-width: 200px;
 }
@@ -101,11 +86,13 @@ img {
   height: auto;
 }
 
-.audio {
+#audio {
+  max-width: 350px;
+  max-height: 350px;
   background-color: #bbd4e4;
   border: solid 4px #7e8e99;
+  margin: 50px;
   margin-top: 250px;
-  margin-bottom: 150px;
   text-align: center;
   justify-content: center !important;
 }
@@ -118,6 +105,7 @@ audio {
 .comment {
   max-width: 30%;
   min-width: 15%;
+  text-align: left;
 }
 
 footer {
@@ -153,4 +141,10 @@ a:hover {
    img #audio{
      display: none;
    }
+}
+
+@media screen and (max-width: 450px) {
+audio,  #audio {
+    max-width: 350px;
+  }
 }
