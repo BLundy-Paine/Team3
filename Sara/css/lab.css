@@ -103,6 +103,31 @@ img {
 
 .audio {
   background-color: #bbd4e4;
+  border: solid 4px #7e8e99;
+  margin-top: 250px;
+  margin-bottom: 150px;
+  text-align: center;
+  justify-content: center !important;
+}
+
+audio {
+  max-width: 300px;
+  position: relative;
+}
+
+.comment {
+  max-width: 30%;
+  min-width: 15%;
+}
+
+footer {
+  display: block;
+  background-color: #b66648;
+  color: #804033;
+  padding: 10px;
+  margin: 20px;
+  font-family: 'Inconsolata', monospace;
+  font-size: 80%;
 }
 
 a {
@@ -116,6 +141,16 @@ a:hover {
     color: #787878;
   }
 
-footer {
-  text-align: center;
+@media screen and (max-width: 1200px) {
+  #audio {
+       min-width: 100%;
+       margin-top: 40px;
+       display: inline-block;
+       background-color: none;
+       border: none;
+       margin: none;
+     }
+   img #audio{
+     display: none;
+   }
 }
