@@ -26,6 +26,7 @@ color: #FCF5E5 !important;
 
 header {
   text-align: center;
+  font-weight: bold;
 }
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
@@ -60,8 +61,12 @@ figcaption {
   max-height: 20vh;
 }
 .thumbnail {
+  min-width: 120px;
   max-width: 120px;
   min-height: 100%;
+  border: solid 1px black;
+  padding: 0 !important;
+  filter: grayscale(20%);
 }
 .audio {
   text-align: center;

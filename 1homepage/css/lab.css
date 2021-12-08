@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
-  background-color: #FCF5E5;
+  background-color: #5a7048;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -10,35 +10,14 @@ h1 {
   text-align: center;
 }
 
+.navbar-nav {
+  margin: auto;
+  text-align: center;
+}
+
 h3 {
   color: white;
   padding: 6px 8px 6px 16px;
-}
-/* The sidebar menu */
-.sidenav {
-  width: 120px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #818181;
-  display: block;
-}
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
 }
 
 .carousel {
@@ -53,11 +32,15 @@ h3 {
     top: 0;
 }
 .carousel-indicators {
-  margin-bottom: -6px;
+  margin-bottom: 2px;
+}
+.vincent {
+  filter: brightness(0.80) contrast(140%) grayscale(95%) sepia(20%);
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 1em;}
+@media (min-width: 480px) {
+  .navbar-nav {
+
+  }
 }
