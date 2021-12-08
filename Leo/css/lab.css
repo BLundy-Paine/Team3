@@ -1,3 +1,28 @@
+/* navbar styling */
+.border-sm-right {
+  border-right: 1px solid silver;
+}
+.navbar-brand {
+  font-size: 1.7em;
+}
+.mine {
+  font-weight: 800;
+}
+.navbar {
+  background-color: #804033 !important;
+}
+.nav-link {
+  color: #FFFFFF !important;
+}
+.navbar ul li a:hover {
+color: #FCF5E5 !important;
+}
+@media (max-width: 575px){
+  .border-sm-right {
+    border-right: none;
+  }
+}
+
 p{
   color: #ffa500;
 }
