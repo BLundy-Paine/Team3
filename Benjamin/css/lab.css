@@ -58,7 +58,7 @@ figcaption {
 
 .media {
   background-color: #738e99;
-  max-height: 20vh;
+  max-height: 135px;
 }
 .thumbnail {
   min-width: 120px;
@@ -75,7 +75,7 @@ figcaption {
   width: 90%;
   opacity: 0.8;
 }
-h4 {
+#play {
   font-size: 1.3em;
 }
 
