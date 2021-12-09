@@ -37,10 +37,3 @@ h3 {
 .vincent {
   filter: brightness(0.80) contrast(140%) grayscale(95%) sepia(20%);
 }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media (min-width: 480px) {
-  .navbar-nav {
-
-  }
-}
