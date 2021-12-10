@@ -1,18 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
-  background-color: #5a7048;
+  background-color: #708c5a;
   font-family: 'Inconsolata', monospace;
 }
 
 h1 {
   font-family: 'Libre Baskerville', serif;
+  color: black;
   text-align: center;
 }
 
+.border-top, .border-bottom {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+}
 .navbar-nav {
   margin: auto;
   text-align: center;
+}
+.nav-link {
+  color: #FBFBF9;
+}
+.nav-link:hover {
+  background-color: #BBD4E4;
+  color: black;
+}
+.border-sm-right {
+  border-right: 1px solid black;
 }
 
 h3 {
@@ -36,4 +51,10 @@ h3 {
 }
 .vincent {
   filter: brightness(0.80) contrast(140%) grayscale(95%) sepia(20%);
+}
+
+@media (max-width: 575px) {
+  .nav-item {
+    border-right: none;
+  }
 }
