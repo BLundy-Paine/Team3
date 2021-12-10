@@ -4,7 +4,13 @@ body {
   background-color: #FCF5E5;
   font-family: 'Inconsolata', monospace;
 }
+.d-flex {
+  height: 100%;
+}
 
+.container-fluid {
+  padding: 0;
+}
 .border-sm-right {
   border-right: 1px solid silver;
 }
@@ -31,6 +37,9 @@ header {
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
   line-height: 2em !important;
+}
+h5 {
+  font-family: 'Libre Baskerville', serif;
 }
 .sub {
   font-size: 80%;
@@ -87,6 +96,17 @@ figcaption {
 }
 .grove {
   filter: saturate(70%) contrast(130%) brightness(120%);
+}
+
+footer {
+  display:flex;
+  flex-direction: column;
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  text-align: center;
+}
+footer a {
+  color: #bbd4e4;
 }
 
 @media (min-width: 768px) {

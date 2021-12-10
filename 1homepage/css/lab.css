@@ -5,10 +5,19 @@ body {
   font-family: 'Inconsolata', monospace;
 }
 
-h1 {
+.container-fluid {
+  padding: 0;
+}
+.header {
   font-family: 'Libre Baskerville', serif;
-  color: black;
+  color: #0d0907;
   text-align: center;
+  height: 150px;
+  background-color: rgba(251, 251, 249,0.8);
+  background-image: url(../img/background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .border-top, .border-bottom {
@@ -30,9 +39,11 @@ h1 {
   border-right: 1px solid black;
 }
 
-h3 {
-  color: white;
-  padding: 6px 8px 6px 16px;
+summary p, footer p {
+  color: black;
+}
+.summary {
+  font-size: 1.1em;
 }
 
 .carousel {
@@ -53,6 +64,21 @@ h3 {
   filter: brightness(0.80) contrast(140%) grayscale(95%) sepia(20%);
 }
 
+footer {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  text-align: center;
+}
+footer a {
+  color: #bbd4e4;
+}
+
+@media (min-width: 992px) {
+  .summary {
+    line-height: 2em;
+    font-size: 1.3em;
+  }
+}
 @media (max-width: 575px) {
   .nav-item {
     border-right: none;
