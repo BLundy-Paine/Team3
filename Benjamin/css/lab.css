@@ -4,13 +4,12 @@ body {
   background-color: #FCF5E5;
   font-family: 'Inconsolata', monospace;
 }
-.d-flex {
-  height: 100%;
+
+sup {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.7em;
 }
 
-.container-fluid {
-  padding: 0;
-}
 .border-sm-right {
   border-right: 1px solid silver;
 }
@@ -61,11 +60,8 @@ figcaption {
 }
 
 .media {
-  background-color: #738e99;
+  background-color: #4d7080;
   max-height: 135px;
-}
-.media a {
-  color: #5a7048;
 }
 .thumbnail {
   min-width: 120px;
@@ -84,11 +80,12 @@ figcaption {
 }
 #play {
   font-size: 1.3em;
+  padding: 0 !important;
+  color: #fbfbf9;
 }
 
 .carousel-caption h5, .carousel-caption p {
   background-color: rgba(122,153,98,0.9);
-  font-weight: 600;
 }
 .carmel {
   filter: grayscale(80%) sepia(30%);
@@ -112,6 +109,9 @@ figcaption {
 }
 footer a {
   color: #5a7048;
+}
+footer a:hover {
+  color: #467b8c;
 }
 
 @media (min-width: 768px) {
