@@ -47,10 +47,6 @@ h5 {
   padding-left: 1em;
 }
 
-p, li {
-  font-size:
-}
-
 figure {
     display: flex;
     flex-flow: column;
@@ -68,13 +64,16 @@ figcaption {
   background-color: #738e99;
   max-height: 135px;
 }
+.media a {
+  color: #5a7048;
+}
 .thumbnail {
   min-width: 120px;
   max-width: 120px;
   min-height: 100%;
   border: solid 1px black;
   padding: 0 !important;
-  filter: grayscale(20%);
+  filter: grayscale(90%) contrast(80%) brightness(120%) sepia(30%);
 }
 .audio {
   text-align: center;
@@ -98,13 +97,21 @@ figcaption {
   filter: saturate(70%) contrast(130%) brightness(120%);
 }
 
-.container-fluid footer {
+.top {
   text-align: center;
-  border-top: solid 2px black !important;
-  border-bottom: solid 2px black !important;
+}
+.source {
+  text-decoration: underline;
+  text-align: left;
+  font-size: 120%;
+}
+.container-fluid footer {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  font-weight: 600;
 }
 footer a {
-  color: #bbd4e4;
+  color: #5a7048;
 }
 
 @media (min-width: 768px) {

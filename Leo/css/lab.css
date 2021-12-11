@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
+
 /* navbar styling */
 .border-sm-right {
   border-right: 1px solid silver;
@@ -15,14 +17,18 @@
   color: #FFFFFF !important;
 }
 .navbar ul li a:hover {
-color: #FCF5E5 !important;
+  color: #BBD4E4 !important;
 }
 @media (max-width: 575px){
   .border-sm-right {
     border-right: none;
   }
 }
-
+@media (max-width: 575px) {
+  .border-sm-right {
+    border-right: none;
+  }
+}
 /* p{
   color: #ffa500;
 } */
@@ -37,4 +43,21 @@ color: #FCF5E5 !important;
 
 #collage {
   filter: grayscale(50%);
+}
+
+.top {
+  text-align: center;
+}
+.source {
+  text-decoration: underline;
+  text-align: left;
+  font-size: 120%;
+}
+.container-fluid footer {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  font-weight: 600;
+}
+footer a {
+  color: #5a7048;
 }
