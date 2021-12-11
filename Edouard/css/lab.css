@@ -92,18 +92,21 @@ img {
 }
 #image2{
   position: absolute;
-  top: 1100px; right: 10px;
+  top: 1600px; right: 10px;
   float:right;
 
   max-width: 60%
 }
 
-#audio {
-  position: absolute; top: 10px, left 15px;
+#image7{
+  position: absolute;
+  top: 900px; right :380px
 }
+
+
 #poem{
   position: absolute;
-  top : 730px; right: 500px
+  top : 1300px; right: 500px
 }
 
 a {
@@ -111,6 +114,15 @@ a {
     text-decoration: none;
     background-color: transparent;
     justify-content: space-between;
+}
+
+
+
+#titre{
+  font-family: 'Libre Baskerville', serif;
+  color: #738E99;
+  padding: 7px;
+  font-size: 30px;
 }
 
 a:hover {
