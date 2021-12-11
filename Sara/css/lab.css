@@ -18,6 +18,22 @@
   color: #FFFFFF !important;
 }
 
+.border-sm-right {
+  border-right:1px solid silver;
+}
+
+.navbar-brand {
+  font-size: 1.7em;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+.navbar ul li a:hover {
+  color: #BBD4E4 !important;
+}
+
 #active {
   font-weight: bold;
 }
@@ -130,5 +146,11 @@ audio,  #audio {
   }
   h1 {
     text-align: left;
+  }
+}
+
+@media (max-width: 575px) {
+  .border-sm-right {
+    border-right: none;
   }
 }
