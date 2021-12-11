@@ -44,3 +44,20 @@
 #collage {
   filter: grayscale(50%);
 }
+
+.top {
+  text-align: center;
+}
+.source {
+  text-decoration: underline;
+  text-align: left;
+  font-size: 120%;
+}
+.container-fluid footer {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  font-weight: 600;
+}
+footer a {
+  color: #5a7048;
+}
