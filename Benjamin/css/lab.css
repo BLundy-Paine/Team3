@@ -4,7 +4,13 @@ body {
   background-color: #FCF5E5;
   font-family: 'Inconsolata', monospace;
 }
+.d-flex {
+  height: 100%;
+}
 
+.container-fluid {
+  padding: 0;
+}
 .border-sm-right {
   border-right: 1px solid silver;
 }
@@ -21,7 +27,7 @@ body {
   color: #FFFFFF !important;
 }
 .navbar ul li a:hover {
-color: #FCF5E5 !important;
+  color: #BBD4E4 !important;
 }
 
 header {
@@ -31,6 +37,9 @@ header {
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
   line-height: 2em !important;
+}
+h5 {
+  font-family: 'Libre Baskerville', serif;
 }
 .sub {
   font-size: 80%;
@@ -55,7 +64,6 @@ figcaption {
     text-align: center;
 }
 
-
 .media {
   background-color: #738e99;
   max-height: 135px;
@@ -79,6 +87,26 @@ figcaption {
   font-size: 1.3em;
 }
 
+.carousel-caption h5, .carousel-caption p {
+  background-color: rgba(122,153,98,0.9);
+  font-weight: 600;
+}
+.carmel {
+  filter: grayscale(80%) sepia(30%);
+}
+.grove {
+  filter: saturate(70%) contrast(130%) brightness(120%);
+}
+
+.container-fluid footer {
+  text-align: center;
+  border-top: solid 2px black !important;
+  border-bottom: solid 2px black !important;
+}
+footer a {
+  color: #bbd4e4;
+}
+
 @media (min-width: 768px) {
   .media {
     width: 80%;
@@ -89,7 +117,7 @@ figcaption {
     padding-left: 0;
   }
 }
-@media (max-width: 575px){
+@media (max-width: 575px) {
   .border-sm-right {
     border-right: none;
   }
