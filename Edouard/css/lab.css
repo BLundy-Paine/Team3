@@ -31,14 +31,6 @@ body {
     color: #738E99;
 }
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +65,7 @@ h1, h2, h3,h6 {
 }
 
 
-/*color for nav*/
+
 .bg-light {
     background-color: #ecede2!important;
 }
@@ -87,14 +79,22 @@ img {
 
 #image1{
   position: relative;
-  margin: auto;
+  text-align: center;
+  max-width: 60%;
+  min-width: 200px;
+}
+
+#image3{
+  position: relative;
+  text-align: center;
   max-width: 60%;
   min-width: 200px;
 }
 #image2{
-  position: relative;
+  position: absolute;
+  top: 1100px; right: 10px;
   float:right;
-  margin: auto;
+
   max-width: 60%
 }
 
@@ -103,7 +103,7 @@ img {
 }
 #poem{
   position: absolute;
-  float: right;
+  top : 730px; right: 500px
 }
 
 a {
@@ -117,7 +117,6 @@ a:hover {
     color: #787878;
   }
 figcaption{
-  background-color:#804033;
-
+font-style: italic;
   text-align: center;
 }

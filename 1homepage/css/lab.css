@@ -1,44 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
-  background-color: #FCF5E5;
+  background-color: #708c5a;
   font-family: 'Inconsolata', monospace;
 }
 
-h1 {
+.container-fluid {
+  padding: 0;
+}
+.header {
   font-family: 'Libre Baskerville', serif;
+  color: #0d0907;
   text-align: center;
+  height: 150px;
+  background-color: rgba(251, 251, 249,0.8);
+  background-image: url(../img/background2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
-h3 {
-  color: white;
-  padding: 6px 8px 6px 16px;
+.border-top, .border-bottom {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
 }
-/* The sidebar menu */
-.sidenav {
-  width: 120px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  left: 0;
-  background-color: #111; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+.navbar-nav {
+  margin: auto;
+  text-align: center;
 }
-/* The navigation menu links */
-.sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 1.2em;
-  color: #818181;
-  display: block;
+.nav-link {
+  color: #FBFBF9;
 }
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.nav-link:hover {
+  background-color: #BBD4E4;
+  color: black;
 }
-/* Style page content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+.border-sm-right {
+  border-right: 1px solid black;
+}
+
+summary p, footer p {
+  color: black;
+}
+.summary {
+  font-size: 1.1em;
 }
 
 .carousel {
@@ -53,11 +58,29 @@ h3 {
     top: 0;
 }
 .carousel-indicators {
-  margin-bottom: -6px;
+  margin-bottom: 2px;
+}
+.vincent {
+  filter: brightness(0.80) contrast(140%) grayscale(95%) sepia(20%);
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 1em;}
+footer {
+  border-top: solid 1px black !important;
+  border-bottom: solid 1px black !important;
+  text-align: center;
+}
+footer a {
+  color: #bbd4e4;
+}
+
+@media (min-width: 992px) {
+  .summary {
+    line-height: 2em;
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 575px) {
+  .nav-item {
+    border-right: none;
+  }
 }

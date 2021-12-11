@@ -42,12 +42,6 @@ body {
 }
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  min-width: 100%;
-  overflow: hidden;
   font-family: 'Inconsolata', monospace;
 }
 
@@ -61,13 +55,6 @@ h2 {
     text-align: left;
 }
 
-.col-lg-6, .col-lg-4, .col-lg-8 {
-  max-height: 800px;
-  max-width: 50%;
-  min-height: 200px;
-  min-width: 20%;
-  margin: 10px;
-}
 
 #poem {
   font-size: 90%;
@@ -75,7 +62,7 @@ h2 {
 }
 
 img {
-  max-width: 60%;
+  max-width: 100%;
   min-width: 200px;
 }
 
@@ -87,6 +74,7 @@ img {
 }
 
 #audio {
+  margin: auto !important;
   max-width: 350px;
   max-height: 350px;
   background-color: #bbd4e4;
@@ -99,12 +87,9 @@ img {
 
 audio {
   max-width: 300px;
-  position: relative;
 }
 
 .comment {
-  max-width: 30%;
-  min-width: 15%;
   text-align: left;
 }
 
@@ -131,20 +116,19 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   #audio {
-       min-width: 100%;
        margin-top: 40px;
        display: inline-block;
        background-color: none;
        border: none;
        margin: none;
      }
-   img #audio{
-     display: none;
-   }
 }
 
 @media screen and (max-width: 450px) {
 audio,  #audio {
     max-width: 350px;
+  }
+  h1 {
+    text-align: left;
   }
 }
