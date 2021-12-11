@@ -15,14 +15,18 @@
   color: #FFFFFF !important;
 }
 .navbar ul li a:hover {
-color: #FCF5E5 !important;
+  color: #BBD4E4 !important;
 }
 @media (max-width: 575px){
   .border-sm-right {
     border-right: none;
   }
 }
-
+@media (max-width: 575px) {
+  .border-sm-right {
+    border-right: none;
+  }
+}
 /* p{
   color: #ffa500;
 } */
