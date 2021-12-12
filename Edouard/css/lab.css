@@ -1,9 +1,12 @@
 import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
+
+
 @media (max-width: 575px) {
   .border-sm-right {
     border-right: none;
   }
 }
+
 
 body {
   background-color: #FCF5E5;
@@ -15,6 +18,7 @@ body {
 }
 .navbar-brand {
   font-size: 1.7em;
+    font-family: 'Inconsolata', monospace;
 }
 .mine {
   font-weight: 800;
@@ -24,6 +28,7 @@ body {
 }
 .nav-link {
   color: #FFFFFF !important;
+  font-family: 'Inconsolata', monospace;
 }
 .navbar ul li a:hover {
   color: #BBD4E4 !important;
