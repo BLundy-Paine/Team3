@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 /* navbar styling */
 .border-sm-right {
   border-right: 1px solid silver;
@@ -24,14 +34,6 @@
     border-right: none;
   }
 }
-@media (max-width: 575px) {
-  .border-sm-right {
-    border-right: none;
-  }
-}
-/* p{
-  color: #ffa500;
-} */
 
 .container {
     width: 100%;
