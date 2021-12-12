@@ -43,8 +43,8 @@ h1, h2, h3, h4 {
     margin-left: auto;
 }
 
-#collage {
-  filter: grayscale(50%);
+.house {
+  filter: grayscale(90%) sepia(40%) contrast(120%);
 }
 
 .top {
