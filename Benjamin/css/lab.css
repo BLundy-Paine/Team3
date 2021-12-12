@@ -66,8 +66,10 @@ figcaption {
 .media {
   background-color: #4d7080;
   max-height: 135px;
+  border: solid 1px #0d0907;
 }
 .thumbnail {
+  margin-top: -1px;
   min-width: 120px;
   max-width: 120px;
   min-height: 100%;
@@ -82,7 +84,7 @@ figcaption {
   width: 90%;
   opacity: 0.8;
 }
-#play {
+.play {
   font-size: 1.3em;
   padding: 0 !important;
   color: #fbfbf9;
@@ -103,7 +105,10 @@ figcaption {
   padding: 0;
 }
 u {
-  text-decoration-color: #804033;
+  text-decoration-color: #8c2a39;
+}
+.com a {
+  color: #8c2a39;
 }
 
 .top {
@@ -130,6 +135,8 @@ footer a:hover {
   .media {
     width: 80%;
   }
+}
+@media (min-width: 1200px) {
   h1, .sub {
     text-decoration: underline;
   }
@@ -142,5 +149,28 @@ footer a:hover {
 @media (max-width: 575px) {
   .border-sm-right {
     border-right: none;
+  }
+}
+@media (max-width: 450px) {
+  .thumbnail {
+    min-width: 90px;
+    max-width: 90px;
+    align-items: flex-end;
+  }
+  .media {
+    max-height: 150px;
+  }
+  .play {
+    font-size: 1em;
+  }
+  .carousel-caption, .carousel-caption h5, p {
+    font-size: 12pt;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 6px;
+  }
+  .carousel-indicators {
+    margin-bottom: 4px;
   }
 }
