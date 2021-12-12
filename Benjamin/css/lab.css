@@ -120,9 +120,10 @@ u {
   font-size: 120%;
 }
 .container-fluid footer {
-  border-top: solid 1px black !important;
+  border-top: solid 2px black !important;
   border-bottom: solid 1px black !important;
   font-weight: 600;
+  background-color: rgba(251, 251, 249, 0.3);
 }
 footer a {
   color: #5a7048;
