@@ -7,7 +7,7 @@ body {
 
 sup {
   font-family: 'Libre Baskerville', serif;
-  font-size: 0.7em;
+  font-size: 12px;
 }
 
 .border-sm-right {
@@ -59,6 +59,10 @@ figcaption {
     text-align: center;
 }
 
+.para {
+  padding: 0;
+}
+
 .media {
   background-color: #4d7080;
   max-height: 135px;
@@ -86,12 +90,20 @@ figcaption {
 
 .carousel-caption h5, .carousel-caption p {
   background-color: rgba(122,153,98,0.9);
+  font-family: 'Inconsolata', monospace;
 }
 .carmel {
   filter: grayscale(80%) sepia(30%);
 }
 .grove {
   filter: saturate(70%) contrast(130%) brightness(120%);
+}
+
+.year {
+  padding: 0;
+}
+u {
+  text-decoration-color: #804033;
 }
 
 .top {
@@ -117,6 +129,9 @@ footer a:hover {
 @media (min-width: 768px) {
   .media {
     width: 80%;
+  }
+  h1, .sub {
+    text-decoration: underline;
   }
 }
 @media (max-width: 1200px) {
