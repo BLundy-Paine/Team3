@@ -101,8 +101,8 @@ figcaption {
   filter: saturate(70%) contrast(130%) brightness(120%);
 }
 
-.year {
-  padding: 0;
+.title {
+  margin:0;
 }
 u {
   text-decoration-color: #8c2a39;
