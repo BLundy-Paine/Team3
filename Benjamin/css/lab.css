@@ -47,8 +47,7 @@ h5 {
 }
 
 figure {
-    display: flex;
-    flex-flow: column;
+
     margin: auto;
 }
 figcaption {
