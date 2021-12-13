@@ -47,8 +47,10 @@ h5 {
 }
 
 figure {
-
+    display: flex;
+    flex-flow: column;
     margin: auto;
+    max-height: 100%
 }
 figcaption {
     background-color: rgba(0,0,0,0.7);
