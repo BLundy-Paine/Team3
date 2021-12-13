@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600;800&family=Libre+Baskerville:wght@400;700&display=swap');
 
 body {
-  background-color: #FCF5E5;
+  background-color: #fbfbf9;
   font-family: 'Inconsolata', monospace;
 }
-.d-flex {
-  height: 100%;
+
+sup {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 12px;
 }
 
-.container-fluid {
-  padding: 0;
-}
 .border-sm-right {
   border-right: 1px solid silver;
 }
@@ -60,14 +59,17 @@ figcaption {
     text-align: center;
 }
 
-.media {
-  background-color: #738e99;
-  max-height: 135px;
+.para {
+  padding: 0;
 }
-.media a {
-  color: #5a7048;
+
+.media {
+  background-color: #4d7080;
+  max-height: 135px;
+  border: solid 1px #0d0907;
 }
 .thumbnail {
+  margin-top: -1px;
   min-width: 120px;
   max-width: 120px;
   min-height: 100%;
@@ -82,19 +84,31 @@ figcaption {
   width: 90%;
   opacity: 0.8;
 }
-#play {
+.play {
   font-size: 1.3em;
+  padding: 0 !important;
+  color: #fbfbf9;
 }
 
 .carousel-caption h5, .carousel-caption p {
   background-color: rgba(122,153,98,0.9);
-  font-weight: 600;
+  font-family: 'Inconsolata', monospace;
 }
 .carmel {
   filter: grayscale(80%) sepia(30%);
 }
 .grove {
   filter: saturate(70%) contrast(130%) brightness(120%);
+}
+
+.title {
+  margin:0;
+}
+u {
+  text-decoration-color: #8c2a39;
+}
+.com a {
+  color: #8c2a39;
 }
 
 .top {
@@ -106,17 +120,26 @@ figcaption {
   font-size: 120%;
 }
 .container-fluid footer {
-  border-top: solid 1px black !important;
+  border-top: solid 2px black !important;
   border-bottom: solid 1px black !important;
   font-weight: 600;
+  background-color: rgba(187, 212, 228, 0.1);
 }
 footer a {
   color: #5a7048;
+}
+footer a:hover {
+  color: #467b8c;
 }
 
 @media (min-width: 768px) {
   .media {
     width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  h1, .sub {
+    text-decoration: underline;
   }
 }
 @media (max-width: 1200px) {
@@ -127,5 +150,28 @@ footer a {
 @media (max-width: 575px) {
   .border-sm-right {
     border-right: none;
+  }
+}
+@media (max-width: 450px) {
+  .thumbnail {
+    min-width: 90px;
+    max-width: 90px;
+    align-items: flex-end;
+  }
+  .media {
+    max-height: 150px;
+  }
+  .play {
+    font-size: 1em;
+  }
+  .carousel-caption, .carousel-caption h5, p {
+    font-size: 12pt;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 6px;
+  }
+  .carousel-indicators {
+    margin-bottom: 4px;
   }
 }
