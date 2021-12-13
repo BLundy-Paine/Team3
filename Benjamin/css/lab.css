@@ -50,7 +50,6 @@ figure {
     display: flex;
     flex-flow: column;
     margin: auto;
-    max-height: 100%
 }
 figcaption {
     background-color: rgba(0,0,0,0.7);
@@ -151,6 +150,12 @@ footer a:hover {
 @media (max-width: 575px) {
   .border-sm-right {
     border-right: none;
+  }
+  figure {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    max-width: 200px;
   }
 }
 @media (max-width: 450px) {
